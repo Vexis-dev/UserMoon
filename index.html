@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserMoon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <div class="scroll-arrow" id="arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+    </div>
+    
+    <div class="content">
+        <section class="hero">
+            <h1>UserMoon</h1>
+            <p>Думает. Спорит. Помагает.</p>
+            <a href="https://t.me/UserMoons_Bot" class="btn">Начать</a>
+        </section>
+
+        <section class="modes">
+            <h2>Фазы луны</h2>
+            <div class="mode-tabs">
+                <button class="mode-btn active" data-mode="normal">Обычная</button>
+                <button class="mode-btn" data-mode="rough">Затмение</button>
+                <button class="mode-btn" data-mode="toxic">Кровавая</button>
+            </div>
+            <div class="chat-preview">
+                <div class="message bot">
+                    <span class="typing"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="terms">
+            <h2>Термины</h2>
+            <dl>
+                <dt>Обычная</dt>
+                <dd>Вежливый собеседник, разъясняет нейтрально</dd>
+                <dt>Затмение</dt>
+                <dd>Прямой, грубоватый, без лишних слов</dd>
+                <dt>Кровавая</dt>
+                <dd>Агрессивный, с матами, провоцирует спор</dd>
+                <dt>Рассуждение</dt>
+                <dd>Бот показывает ход мыслей, а не только результат</dd>
+            </dl>
+        </section>
+
+        <section class="start">
+            <h2>Как начать</h2>
+            <ol>
+                <li>Откройте UserMoon в Telegram</li>
+                <li>Напишите /start</li>
+                <li>Выберите фазу: /mode</li>
+            </ol>
+        </section>
+
+        <footer>
+            <p>Бесплатно. Без подписки.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="protect.js"></script>
+    <script src="moon3d.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
